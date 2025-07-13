@@ -16,9 +16,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "MotoSignatureApp",
+	name: "MotoSignatureAppDolby",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MotoSignatureApp/MotoSignatureApp.apk",
+	apk: "proprietary/system_ext/app/MotoSignatureApp/MotoSignatureAppDolby.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -39,9 +39,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MotorolaSettingsProvider",
+	name: "MotorolaSettingsProviderDolby",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
+	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProviderDolby.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -70,9 +70,9 @@ dex_import {
 }
 
 dex_import {
-	name: "com.motorola.motosignature",
+	name: "com.motorola.motosignatureDolby",
 	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/com.motorola.motosignature.jar"],
+	jars: ["proprietary/system_ext/framework/com.motorola.motosignatureDolby.jar"],
 	system_ext_specific: true,
 }
 
@@ -84,16 +84,16 @@ dex_import {
 }
 
 dex_import {
-	name: "moto-settings",
+	name: "moto-settingsDolby",
 	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/moto-settings.jar"],
+	jars: ["proprietary/system_ext/framework/moto-settingsDolby.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
 	name: "moto",
 	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/moto.jar"],
+	jars: ["proprietary/system_ext/framework/motoDolby.jar"],
 	system_ext_specific: true,
 }
 
